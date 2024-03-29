@@ -11,9 +11,9 @@ tags:
 最近在学习Langchain框架，顺手写一个“WTF Langchain极简入门”，供小白们使用（编程大佬可以另找教程）。本教程默认以下前提：
 - 使用Python版本的[Langchain](https://github.com/hwchase17/langchain)
 - LLM使用OpenAI的模型
-- Langchain目前还处于快速发展阶段，版本迭代频繁，为避免示例代码失效，本教程统一使用版本 **0.0.235**
+- Langchain目前还处于快速发展阶段，版本迭代频繁，为避免示例代码失效，本教程统一使用版本 **0.1.0 **
 
-根据Langchain的[代码约定](https://github.com/hwchase17/langchain/blob/v0.0.235/pyproject.toml#L14C1-L14C24)，Python版本 ">=3.8.1,<4.0"。
+根据Langchain的[代码约定](https://github.com/hwchase17/langchain/blob/v0.1.0 /pyproject.toml#L14C1-L14C24)，Python版本 ">=3.8.1,<4.0"。
 
 推特：[@verysmallwoods](https://twitter.com/verysmallwoods)
 
@@ -139,7 +139,7 @@ pip install duckduckgo-search
 
     `name` 变量定义了工具的名称。这正是我们使用 `load_tools` 函数加载工具时所需要的。当然，目前比较棘手的是，`load_tools` 的实现对工具名称做了映射，因此并不是所有工具都如实使用工具类中定义的 `name`。比如，`DuckDuckGoSearchRun` 的名称是 `duckduckgo_search`，但是 `load_tools` 函数需要使用 `ddg-search` 来加载该工具。
 
-    请参考源代码 [load_tools.py](https://github.com/langchain-ai/langchain/blob/v0.0.235/langchain/agents/load_tools.py#L314) 了解工具数据初始化的详情。
+    请参考源代码 [load_tools.py](https://github.com/langchain-ai/langchain/blob/v0.1.0 /langchain/agents/load_tools.py#L314) 了解工具数据初始化的详情。
 
     用法
 
@@ -160,7 +160,7 @@ pip install duckduckgo-search
     get_all_tool_names()
     ```
 
-    当前 `LangChain` 版本 `0.0.235` 中，我们应该能看到如下列表：
+    当前 `LangChain` 版本 `0.1.0 ` 中，我们应该能看到如下列表：
 
     ```shell
        ['python_repl',
@@ -228,7 +228,7 @@ agent.run("What is the height difference between Eiffel Tower and Taiwan 101 Tow
 3. 通过 `initialize_agent` 函数初始化代理执行器，指定代理类型为 `ZERO_SHOT_REACT_DESCRIPTION`，并打开 `verbose` 模式，用于输出调试信息。
 4. 通过 `run` 函数运行代理。
 
-参考 `initialize_agent` 的实现，我们会看到它返回的是 `AgentExecutor` 类型的实例。这也是代理执行器的常见用法。请前往源代码 [initialize.py](https://github.com/langchain-ai/langchain/blob/v0.0.235/langchain/agents/initialize.py#L12) 了解更多初始化代理执行器的详情。
+参考 `initialize_agent` 的实现，我们会看到它返回的是 `AgentExecutor` 类型的实例。这也是代理执行器的常见用法。请前往源代码 [initialize.py](https://github.com/langchain-ai/langchain/blob/v0.1.0 /langchain/agents/initialize.py#L12) 了解更多初始化代理执行器的详情。
 
 ```python
 def initialize_agent(

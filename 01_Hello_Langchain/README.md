@@ -11,9 +11,9 @@ tags:
 最近在学习Langchain框架，顺手写一个“WTF Langchain极简入门”，供小白们使用（编程大佬可以另找教程）。本教程默认以下前提：
 - 使用Python版本的[Langchain](https://github.com/hwchase17/langchain)
 - LLM使用OpenAI的模型
-- Langchain目前还处于快速发展阶段，版本迭代频繁，为避免示例代码失效，本教程统一使用版本 **0.0.235**
+- Langchain目前还处于快速发展阶段，版本迭代频繁，为避免示例代码失效，本教程统一使用版本 **0.1.0 **
 
-根据Langchain的[代码约定](https://github.com/hwchase17/langchain/blob/v0.0.235/pyproject.toml#L14C1-L14C24)，Python版本 ">=3.8.1,<4.0"。
+根据Langchain的[代码约定](https://github.com/hwchase17/langchain/blob/v0.1.0 /pyproject.toml#L14C1-L14C24)，Python版本 ">=3.8.1,<4.0"。
 
 推特：[@verysmallwoods](https://twitter.com/verysmallwoods)
 
@@ -63,7 +63,7 @@ tags:
 ### 安装指令
 
 ```shell
-pip install langchain==0.0.235 openai
+pip install langchain==0.1.0  openai
 ```
 
 ### 代码
@@ -93,7 +93,7 @@ content='Hello! How can I assist you today?' additional_kwargs={} example=False
 1. 以下系统命令安装必要的Python包，langchain和openai。
 
   ```shell
-  pip install langchain==0.0.235 openai
+  pip install langchain==0.1.0  openai
   ```
 
 2. 以下代码将OpenAI的API Key设置在环境变量中。默认情况下，Langchain会从环境变量 `OPENAI_API_KEY` 中读取API Key。注意，在代码中直接嵌入API Key明文并不安全，切勿将API Key直接提交到代码仓库。我们建议利用.env文件和python-dotenv包来管理API Key。

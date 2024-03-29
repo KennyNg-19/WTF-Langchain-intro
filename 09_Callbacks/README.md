@@ -11,9 +11,9 @@ tags:
 最近在学习Langchain框架，顺手写一个“WTF Langchain极简入门”，供小白们使用（编程大佬可以另找教程）。本教程默认以下前提：
 - 使用Python版本的[Langchain](https://github.com/hwchase17/langchain)
 - LLM使用OpenAI的模型
-- Langchain目前还处于快速发展阶段，版本迭代频繁，为避免示例代码失效，本教程统一使用版本 **0.0.235**
+- Langchain目前还处于快速发展阶段，版本迭代频繁，为避免示例代码失效，本教程统一使用版本 **0.1.0 **
 
-根据Langchain的[代码约定](https://github.com/hwchase17/langchain/blob/v0.0.235/pyproject.toml#L14C1-L14C24)，Python版本 ">=3.8.1,<4.0"。
+根据Langchain的[代码约定](https://github.com/hwchase17/langchain/blob/v0.1.0 /pyproject.toml#L14C1-L14C24)，Python版本 ">=3.8.1,<4.0"。
 
 推特：[@verysmallwoods](https://twitter.com/verysmallwoods)
 
@@ -27,7 +27,7 @@ tags:
 
 在 `Python` 程序中， 回调处理器通过继承 `BaseCallbackHandler` 来实现。`BaseCallbackHandler` 接口对每一个可订阅的事件定义了一个回调函数。`BaseCallbackHandler` 的子类可以实现这些回调函数来处理事件。当事件触发时，`LangChain` 的回调管理器 `CallbackManager` 会调用相应的回调函数。
 
-以下是 `BaseCallbackHandler` 的定义。请参考[源代码](https://github.com/langchain-ai/langchain/blob/v0.0.235/langchain/callbacks/base.py#L225)。
+以下是 `BaseCallbackHandler` 的定义。请参考[源代码](https://github.com/langchain-ai/langchain/blob/v0.1.0 /langchain/callbacks/base.py#L225)。
 
 ```python
 class BaseCallbackHandler:
@@ -96,7 +96,7 @@ class BaseCallbackHandler:
 
 `StdOutCallbackHandler` 是 `LangChain` 所支持的最基本的处理器。它将所有的回调信息打印到标准输出。这对于调试非常有用。
 
-`LangChain` 链的基类 `Chain` 提供了一个 `callbacks` 参数来指定要使用的回调处理器。请参考[`Chain源码`](https://github.com/langchain-ai/langchain/blob/v0.0.235/langchain/chains/base.py#L63)，其中代码片段为：
+`LangChain` 链的基类 `Chain` 提供了一个 `callbacks` 参数来指定要使用的回调处理器。请参考[`Chain源码`](https://github.com/langchain-ai/langchain/blob/v0.1.0 /langchain/chains/base.py#L63)，其中代码片段为：
 
 ```python
 class Chain(Serializable, ABC):

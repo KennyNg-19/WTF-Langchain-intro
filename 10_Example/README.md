@@ -11,9 +11,9 @@ tags:
 最近在学习Langchain框架，顺手写一个“WTF Langchain极简入门”，供小白们使用（编程大佬可以另找教程）。本教程默认以下前提：
 - 使用Python版本的[Langchain](https://github.com/hwchase17/langchain)
 - LLM使用OpenAI的模型
-- Langchain目前还处于快速发展阶段，版本迭代频繁，为避免示例代码失效，本教程统一使用版本 **0.0.235**
+- Langchain目前还处于快速发展阶段，版本迭代频繁，为避免示例代码失效，本教程统一使用版本 **0.1.0 **
 
-根据Langchain的[代码约定](https://github.com/hwchase17/langchain/blob/v0.0.235/pyproject.toml#L14C1-L14C24)，Python版本 ">=3.8.1,<4.0"。
+根据Langchain的[代码约定](https://github.com/hwchase17/langchain/blob/v0.1.0 /pyproject.toml#L14C1-L14C24)，Python版本 ">=3.8.1,<4.0"。
 
 推特：[@verysmallwoods](https://twitter.com/verysmallwoods)
 
@@ -33,7 +33,7 @@ Developer Guide](https://docs.aws.amazon.com/pdfs/serverless/latest/devguide/ser
 1. 安装必要的 `Python` 包
 
     ```shell
-    !pip install -q langchain==0.0.235 openai chromadb pymupdf tiktoken
+    !pip install -q langchain==0.1.0  openai chromadb pymupdf tiktoken
     ```
 
 2. 设置OpenAI环境
